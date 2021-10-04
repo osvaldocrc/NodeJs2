@@ -12,7 +12,7 @@ rl.question('Cual es tu nombre: ', (answer) =>{
     process.exit();
 });*/
 
-rl.question('Cual es tu nombre: ', (answer) =>{
+rl.question('Cual es tu nombre: ', (answer) => {
     persona.nombre = answer;
 
     rl.setPrompt('Dime un comentario? ');
@@ -31,7 +31,7 @@ rl.on('line', (input) => {
     }
 
     persona.comentarios.push(input.trim())
-    
+
     rl.setPrompt('Dime un comentario? ');
     rl.prompt();
 });
