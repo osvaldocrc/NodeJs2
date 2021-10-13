@@ -1,0 +1,8 @@
+
+<!--Funcion Promesa-->
+
+fetch("/robots.txt")
+  .then(response => response.text())
+  .then(data => console.log(data))
+  .finally(() => console.log("Terminado."))
+  .catch(error => console.error(data));

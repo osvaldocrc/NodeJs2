@@ -1,0 +1,14 @@
+en powershell
+
+Set-ExecutionPolicy RemoteSigned
+
+y despues 
+
+Set-ExecutionPolicy Restricted
+
+ --
+ 
+ Para utilizar la linea de comandos es de la siguiente manera
+
+   >: powershell Set-ExecutionPolicy RemoteSigned
+

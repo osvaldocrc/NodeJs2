@@ -1,0 +1,23 @@
+
+
+@REM Se tuvieron problemas de jecución del comando, se rocedió comando
+
+@REM powershell Get-ExecutionPolicy -list
+@REM powershell Set-ExecutionPolicy -ExecutionPolicy Undefined -Scope LocalMachine
+@REM powershell Set-ExecutionPolicy ByPass -File C:\Users\Osvaldo\AppData\Roaming\npm\httpster.ps1
+
+@REM y al final del procedo se restablecio
+
+@REM powershell Set-ExecutionPolicy -ExecutionPolicy AllSigned -Scope LocalMachine
+
+HTTPster es un servidor de contenido estatico
+
+powershell Set-ExecutionPolicy RemoteSigned
+Luego para ejecutar el servidor httpster
+   >: httpster -p 8081 -d ./public
+
+y despues 
+
+powershell Set-ExecutionPolicy Restricted
+
+
